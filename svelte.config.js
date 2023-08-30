@@ -14,7 +14,7 @@ const config = {
 		adapter: adapter(),
 		paths: {
 			// If you want to set up your project in a subfolder, adjust this accordingly
-			base: '/bingoNumbers'
+			base: process.env.NODE_ENV === 'production' ? '/sveltekit-github-pages' : ''
 		}
 	}
 };
